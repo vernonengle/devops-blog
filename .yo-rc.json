@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "devopsdemo.blog",
+            "nativeLanguage": "en"
+        },
+        "jhipsterVersion": "5.8.1",
+        "applicationType": "monolith",
+        "baseName": "blog",
+        "packageName": "devopsdemo.blog",
+        "packageFolder": "devopsdemo/blog",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": "spring-websocket",
+        "databaseType": "sql",
+        "devDatabaseType": "h2Disk",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "gradle",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "M2RhNmRjODVlZWM0MzIwZGRiMDBkZWFlMjliNTU0ZWQ3MDk0MTk3NDM4ZTM2YzMyYWQzNzhjNjRkMWJiNTFjNzBjZGUzNzIwNjhlOGZhMzY4MmZhZDlkMjI3MzNlZDdmMWZhODZjYTdjNDEwYzlhY2MyN2RjOGRlMmQ1ZGY2Mjk=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["gatling", "protractor"],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "en",
+        "languages": ["en", "zh-cn", "it", "ja"]
+    }
+}
