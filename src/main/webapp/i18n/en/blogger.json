@@ -1,0 +1,25 @@
+{
+    "blogApp": {
+        "blogger": {
+            "home": {
+                "title": "Bloggers",
+                "createLabel": "Create a new Blogger",
+                "createOrEditLabel": "Create or edit a Blogger"
+            },
+            "created": "A new Blogger is created with identifier {{ param }}",
+            "updated": "A Blogger is updated with identifier {{ param }}",
+            "deleted": "A Blogger is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Blogger {{ id }}?"
+            },
+            "detail": {
+                "title": "Blogger"
+            },
+            "username": "Username",
+            "email": "Email",
+            "user": "User",
+            "blog": "Blog",
+            "comment": "Comment"
+        }
+    }
+}

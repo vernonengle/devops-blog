@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="blogger">
+            <h2><span jhiTranslate="blogApp.blogger.detail.title">Blogger</span> {{blogger.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="blogApp.blogger.username">Username</span></dt>
+                <dd>
+                    <span>{{blogger.username}}</span>
+                </dd>
+                <dt><span jhiTranslate="blogApp.blogger.email">Email</span></dt>
+                <dd>
+                    <span>{{blogger.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="blogApp.blogger.user">User</span></dt>
+                <dd>
+                    {{blogger.user?.id}}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/blogger', blogger.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+    "blogApp": {
+        "blogger": {
+            "home": {
+                "title": "Bloggers",
+                "createLabel": "Genera un nuovo Blogger",
+                "createOrEditLabel": "Genera o modifica un Blogger"
+            },
+            "created": "&Egrave; stato generato un nuovo Blogger con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Blogger identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Blogger con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Blogger {{ id }}?"
+            },
+            "detail": {
+                "title": "Blogger"
+            },
+            "username": "Username",
+            "email": "Email",
+            "user": "User",
+            "blog": "Blog",
+            "comment": "Comment"
+        }
+    }
+}

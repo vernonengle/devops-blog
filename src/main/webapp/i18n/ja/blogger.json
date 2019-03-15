@@ -1,0 +1,25 @@
+{
+    "blogApp": {
+        "blogger": {
+            "home": {
+                "title": "Bloggers",
+                "createLabel": "Blogger を追加",
+                "createOrEditLabel": "Bloggerを追加または編集"
+            },
+            "created": "A new Blogger is created with identifier {{ param }}",
+            "updated": "A Blogger is updated with identifier {{ param }}",
+            "deleted": "A Blogger is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Blogger {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Blogger"
+            },
+            "username": "Username",
+            "email": "Email",
+            "user": "User",
+            "blog": "Blog",
+            "comment": "Comment"
+        }
+    }
+}

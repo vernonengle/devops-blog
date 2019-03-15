@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-blog-heading" jhiTranslate="blogApp.blog.home.createOrEditLabel">Create or edit a Blog</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!blog.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="blog.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="blogApp.blog.content" for="field_content">Content</label>
+                    <textarea class="form-control" name="content" id="field_content"
+                        [(ngModel)]="blog.content" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="blogApp.blog.datePosted" for="field_datePosted">Date Posted</label>
+                    <div class="d-flex">
+                        <input id="field_datePosted" type="datetime-local" class="form-control" name="datePosted" [(ngModel)]="datePosted" placeholder="YYYY-MM-DD HH:mm"
+                        />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="blogApp.blog.blogger" for="field_blogger">Blogger</label>
+                    <select class="form-control" id="field_blogger" name="blogger" [(ngModel)]="blog.blogger" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="bloggerOption.id === blog.blogger?.id ? blog.blogger : bloggerOption" *ngFor="let bloggerOption of bloggers; trackBy: trackBloggerById">{{bloggerOption.id}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

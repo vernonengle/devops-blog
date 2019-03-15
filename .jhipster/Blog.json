@@ -1,0 +1,38 @@
+{
+    "name": "Blog",
+    "fields": [
+        {
+            "fieldName": "content",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "datePosted",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "comment",
+            "otherEntityName": "comment",
+            "otherEntityRelationshipName": "blog"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "blogger",
+            "otherEntityName": "blogger",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "blog"
+        }
+    ],
+    "changelogDate": "20190314091441",
+    "entityTableName": "blog",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

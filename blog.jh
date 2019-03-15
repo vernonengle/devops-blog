@@ -1,0 +1,31 @@
+
+entity Blogger {
+    username String
+    email String
+}
+
+entity Blog {
+	content TextBlob
+    datePosted Instant
+}
+
+entity Comment {
+	content TextBlob
+}
+
+relationship OneToMany {
+	Blogger{blog} to Blog{blogger}
+    Blog{comment} to Comment{blog}
+    Blogger{comment} to Comment{blogger}
+}
+
+relationship OneToOne {
+    Blogger{user} to User
+}
+
+service * with serviceClass
+paginate Blog with pagination
+paginate Comment with infinite-scroll
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

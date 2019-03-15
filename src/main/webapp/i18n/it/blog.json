@@ -1,0 +1,24 @@
+{
+    "blogApp": {
+        "blog": {
+            "home": {
+                "title": "Blogs",
+                "createLabel": "Genera un nuovo Blog",
+                "createOrEditLabel": "Genera o modifica un Blog"
+            },
+            "created": "&Egrave; stato generato un nuovo Blog con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato Blog identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Blog con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Blog {{ id }}?"
+            },
+            "detail": {
+                "title": "Blog"
+            },
+            "content": "Content",
+            "datePosted": "Date Posted",
+            "comment": "Comment",
+            "blogger": "Blogger"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "blogApp": {
+        "comment": {
+            "home": {
+                "title": "Comments",
+                "createLabel": "Comment を追加",
+                "createOrEditLabel": "Commentを追加または編集"
+            },
+            "created": "A new Comment is created with identifier {{ param }}",
+            "updated": "A Comment is updated with identifier {{ param }}",
+            "deleted": "A Comment is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Comment {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Comment"
+            },
+            "content": "Content",
+            "blog": "Blog",
+            "blogger": "Blogger"
+        }
+    }
+}
